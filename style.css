@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Sniglet&display=swap");
+body {
+  font-family: "Sniglet", cursive;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #fff;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-shadow: 3px 2px 5px rgba(0, 0, 0, 1);
+}
+
+.search {
+  position: relative;
+}
+
+.searchInput {
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  height: 10px;
+  width: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+.searchInput,
+.searchBtn:focus {
+  outline: none;
+}
+
+.searchBtn {
+  background-color: #264653;
+  color: #fff;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 2rem;
+  border-radius: 10px;
+  transition: trannsform 0.3s ease;
+  cursor: pointer;
+}
+
+.search.active .searchInput {
+  width: 200px;
+  background-color: #fff;
+}
+
+.search.active .searchBtn {
+  transform: translateX(190px);
+  background-color: #fff;
+  color: tomato;
+  font-size: 1.5rem;
+  top: 5px;
+}
+.poke-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+}
+.pokemon {
+  margin: 10px;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: #fefefe;
+  border-radius: 10px;
+}
+
+.img-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 75% 30% 60% 40% / 60% 40% 60% 40%;
+}
+
+.img-container img {
+  width: 175px;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+
+.pokemon:hover .img-container img {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.poke-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.poke-id {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+}
+
+.poke-name {
+  letter-spacing: 2px;
+  margin: 15px 0 10px;
+  text-transform: capitalize;
+}
+
+.small small {
+  padding: 0 5px;
+}
+.poke-type {
+  margin-top: 10px;
+}
