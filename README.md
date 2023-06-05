@@ -8,5 +8,5 @@
 </ul>
 <h2>About Pokedex Guide</h2>
 <p>In this project, it shows how to use the Fetch API to receive or send data to and from a server. The code covers basic scenarios such as retrieving JSON data or submitting a form to a server.</p>
-<a href="">preview</a><br><br>
+<a href="https://poke-guide.netlify.app/">preview</a><br><br>
 <img src="pokedexGuide.gif" alt="">
